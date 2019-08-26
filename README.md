@@ -29,8 +29,8 @@ Takes 4 inputs.
 ## Usage
 1. Add a dependency in your metadata.rb like so: `depends 'hashicorp-vault-lib'`
 2. You can directly call the helper library definition in your recipe like so:
-....* Configure the Vault library. `VaultCookbook::Helper.config(address)`
-....* `VaultCookbook::Helper.approle(approleid, appsecretid, path, secret_name)`
-....* `VaultCookbook::Helper.IAM(vault_endpoint, vault_role, path, secret_name)`
+* Configure the Vault library. `VaultCookbook::Helper.config(address)`
+* `VaultCookbook::Helper.approle(approleid, appsecretid, path, secret_name)`
+* `VaultCookbook::Helper.IAM(vault_endpoint, vault_role, path, secret_name)`
 
 You could choose to pass all these parameters as attributes from your cookbook or fetch them from a databag.
